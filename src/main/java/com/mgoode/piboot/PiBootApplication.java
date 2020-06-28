@@ -69,8 +69,8 @@ public class PiBootApplication implements CommandLineRunner {
     public void displayMessage(String sentence) {
         log.info("Sentence:" + sentence);
         if (nmeaParser.parse(sentence)) {
-            lcd.write(0, "lat: " + String.format("%f", nmeaParser.getLatitude()));
-            lcd.write(1, "lon: " + String.format("%f", nmeaParser.getLongitude()));
+            lcd.write(0, "lat : " + String.format("%f", nmeaParser.getLatitude()));
+            lcd.write(1, "lon : " + String.format("%f", nmeaParser.getLongitude()));
         }
     }
 
