@@ -45,6 +45,7 @@ public class PiBootApplication implements CommandLineRunner {
         SpringApplication springApplication = new SpringApplication(PiBootApplication.class);
         springApplication.addListeners(new ApplicationPidFileWriter());
         springApplication.run(args);
+        
     }
 
     @Override
